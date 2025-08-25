@@ -1,0 +1,12 @@
+// components/CompartmentCard.js
+import React from "react";
+
+export default function CompartmentCard({ name, score, onUpload }) {
+  return (
+    <div className="card">
+      <h2>{name}</h2>
+      <p>Score: {score}/100</p>
+      <input type="file" accept="video/*" onChange={onUpload} />
+    </div>
+  );
+}
